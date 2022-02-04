@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* width: 100%; */
+    }
+</style>
+
+<body>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const myCanvas = document.getElementById('mychart');
+        const ctx = myCanvas.getContext("2d")
+        const label = [
+            '2015',
+            '2016',
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021',
+            '2022'
+        ];
+
+        const data = {
+            label,
+            datasets: [{
+                data: [212,231,222,321,123,342,353,546],
+                label: "Product Sales"
+            }]
+        }
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true
+            }
+        }
+
+        const myChart = new Chart(myCanvas, config )
+        // const myChart = new Chart(
+        // document.getElementById('mychart'),
+        //     config
+        //  );
+
+
+
+
+    </script>
+</body>
+
+</html>
