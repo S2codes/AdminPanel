@@ -246,10 +246,17 @@ a{
   font-size: 1.3rem;
   font-weight: 600;
 }
+
+
 .ProductCard .card img{
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+.product-category{
+  font-size: 1rem;
+  color: #656565;
+  margin-bottom: 5px;
 }
 .productDetails{
   color: #656565;
@@ -385,6 +392,37 @@ align-items: center;
   color: white;
   cursor: pointer;
 }
+
+
+/* add product  */
+.feature-img{
+  /* border: 2px solid red; */
+  height: 250px;
+  width: 100%;
+}
+.product-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
